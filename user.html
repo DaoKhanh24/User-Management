@@ -1,0 +1,296 @@
+﻿<!------- Thiết kế Provider phiên bản boostrap 5.1 -------->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!---- Front Awesome CSS ---->
+	<link href="css/all.css" rel="stylesheet" type="text/css">
+	
+    <!-- Bootstrap CSS -->
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+	<!--- Main CSS--->
+	<link href="user.css" rel="stylesheet" type="text/css">
+	<link href="sample.css" rel="stylesheet" type="text/css">  
+	<tittle> Quản lý Người sử dụng </tittle>
+	
+  </head>
+  
+  <body>
+	<div class="container-lg">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="userview bg-light">
+				
+				
+					<form>
+						<div class="row mb-3 mt-5 mtittle"> 
+							<div class="col-lg-12 "> 
+								<div class="text-center bg-secondary bg-gradient text-light pt-2 pb-2">
+									<i class="fa-solid fa-users"></i> Thông tin tài khoản 
+								
+								</div> 
+							</div>
+						</div>
+					  <div class="row mb-3">
+						
+						<label for="UName" class="col-lg-2 col-form-label text-end"> Tên đăng nhập </label>
+						<div class="col-lg-3">
+						  <input type="text" class="form-control" id="UName">
+						</div>
+					  </div>
+					  <div class="row mb-3">
+						<label for="UPass" class="col-lg-2 col-form-label text-end">Mật khẩu</label>
+						<div class="col-lg-3 ">
+						  <input type="password" class="form-control" id="UPass">
+						</div>			    
+						<label for="UPass2" class="col-lg-2 offset-lg-1 col-form-label text-end">Nhập lại mật khẩu</label>
+						<div class="col-lg-3 ">
+						  <input type="password" class="form-control" id="UPass2">
+						</div>
+					  </div>
+					    <div class="row mb-3">
+							<label for="UEmail" class="col-lg-2 col-form-label text-end">Hộp thư </label>
+								<div class="col-lg-3">
+									<input type="email" class="form-control" id="UEmail">
+								</div>
+						</div>
+						<div class="row mb-3">
+							<label for="UPermis" class="col-lg-2 col-form-label text-end">Quyền thực thi</label>
+							<div class="col-lg-3">
+								<select type="form-control" class="form-control" id="UPermis">
+									<option value="0">-----------Chọn----------</option>
+									<option value="1">Thành viên</option>
+									<option value="2">Tác giả </option>
+									<option value="3">Quản lý</option>
+									<option value="4">Quản lý cấp cao</option>
+									<option value="5">Quản trị</option>
+								</select>
+							</div>
+						</div>
+						  <div class="row mb-3">
+							<label for="URoles" class="col-lg-2 col-form-label d-flex align-items-center justify-content-end">Vai trò thực thi</label>
+							<div class="col-lg-9">
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk1" >
+									  <label class="form-check-label" for="chk1">
+											<i class="fa-solid fa-users"></i>Quản lý người sử dụng
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk2" >
+									  <label class="form-check-label" for="chk2">
+											<i class="fa-solid fa-section"></i>Quản lý chuyên mục
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+											<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk3" >
+									  <label class="form-check-label" for="chk3">
+											<i class="fa-solid fa-users"></i>Quản lý thể loại
+									  </label>
+									</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk4" >
+									  <label class="form-check-label" for="chk4">
+											<i class="fa-solid fa-newspaper"></i>Quản lý bài viết 
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk5" >
+									  <label class="form-check-label" for="chk5">
+											<i class="fa-solid fa-users"></i>Quản lý hệ sản phẩm
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+											<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk6" >
+									  <label class="form-check-label" for="chk6">
+											<i class="fa-solid fa-users"></i>Quản lý nhóm sản xuất 
+									  </label>
+									</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk7" >
+									  <label class="form-check-label" for="chk7">
+											<i class="fa-solid fa-newspaper"></i>Quản lý loại sản phẩm
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+										<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk8" >
+									  <label class="form-check-label" for="chk8">
+											<i class="fa-solid fa-users"></i>Quản lý sản phẩm
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+											<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk9" >
+									  <label class="form-check-label" for="chk9">
+											<i class="fa-solid fa-users"></i>Quản lý hóa đơn 
+									  </label>
+									</div>
+									</div>
+									<div class="col-md-4">
+											<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chk10" >
+									  <label class="form-check-label" for="chk10">
+											<i class="fa-solid fa-users"></i>Quản lý khách hàng 
+									  </label>
+									</div>
+									</div>
+								</div>
+							</div> 
+						</div>
+						<div class="row mb-3 mt-5 mtittle"> 
+							<div class="col-lg-12 "> 
+								<div class="text-center bg-secondary bg-gradient text-light pt-2 pb-2">
+									<i class="fa-solid fa-circle-info"></i> Thông tin chi tiết 
+								</div> 
+							</div>
+						</div>
+						 <div class="row mb-3">
+						
+						<label for="UFullName" class="col-lg-2 col-form-label text-end"> Tên đầy đủ </label>
+						<div class="col-lg-3">
+						  <input type="text" class="form-control" id="UFullName">
+						</div>
+					  </div>
+					   <div class="row mb-3">
+						
+						<label for="UName" class="col-lg-2 col-form-label text-end"> Tên khác </label>
+						<div class="col-lg-3">
+						  <input type="text" class="form-control" id="UName">
+						</div>
+					  </div>
+					  <div class="row mb-3">
+							<label for="UPermis" class="col-lg-2 col-form-label text-end">Giới tính</label>
+							<div class="col-lg-3">
+								<select type="form-control" class="form-control" id="UPermis">
+									<option value="0">-----------Chọn----------</option>
+									<option value="1">Nam</option>
+									<option value="2">Nữ</option>
+									<option value="3">Khác</option>
+								</select>
+							</div>
+						</div>
+						 <div class="row mb-3">
+						
+						<label for="UAddress" class="col-lg-2 col-form-label text-end"> Địa chỉ </label>
+							<div class="col-lg-2">
+								<select class="form-control" id="UAddress">
+									<option value="0">...(Tỉnh/Thành phố)...</option>
+								</select>
+							</div>
+							<div class="col-lg-2">
+								<select class="form-control" id="UAddress1">
+									<option value="0">...(Quận/Huyện)...</option>
+								</select>
+							</div>
+							<div class="col-lg-5">
+								<input type="text" class="form-control" id="Uaddress2">
+							</div>
+						</div>
+					<div class="row mb-3 ">
+						<label for="UNumber" class="col-lg-2 col-form-label text-end">Số điện thoại </label>
+						<div class="col-lg-3 ">
+						  <input type="text" class="form-control" id="UNumber" placeholder="Số cố định">
+						</div>			    
+						<div class="col-lg-3 ">
+						  <input type="text" class="form-control" id="UNumber1" placeholder="Số di động">
+						</div>
+						<div class="col-lg-3 ">
+						  <input type="text" class="form-control" id="UNumber2" placeholder="Số văn phòng">
+						</div>
+					  </div>
+					  	 <div class="row mb-3">
+						<label for="UDetail" class="col-lg-2 col-form-label d-flex align-items-center justify-content-end">Thông tin chi tiết</label>
+						<div class="col-lg-9">
+						  <div id="UDetail"> </div>
+						</div>
+					  </div>	
+					  <div class="row mb-3 mt-5 mtittle"> 
+							<div class="col-lg-12 "> 
+								<div class="text-center bg-secondary bg-gradient text-light pt-2 pb-2">
+									<i class="fa-solid fa-circle-info"></i> Thông tin cơ quan 
+								</div> 
+							</div>
+						</div>
+						<div class="row mb-3">
+							<div class="col-lg-10 offset-lg-1">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.559548308537!2d105.73394633195686!3d21.05364474749155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345457e292d5bf%3A0x20ac91c94d74439a!2sHanoi%20University%20of%20Industry!5e0!3m2!1sen!2s!4v1654251275063!5m2!1sen!2s"
+							width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+							
+						</div>
+							
+						  <div class="row mb-3">
+							<div class="col-lg-7 offset-lg-3">
+								<div class="form-check">
+									 <input class="form-check-input" type="checkbox" value="" id="chkAgree" >
+									  <label class="form-check-label" for="chkAgree">
+										Bạn có chấp nhận những quy định? 
+									  </label>
+									</div>
+							</div>
+							<div class="col-lg-12 text-center links">							 
+							  <a href="#"><i class="fa-solid fa-unlock-keyhole"></i> Quy định Nhà cung cấp! </a>&nbsp;&nbsp|&nbsp;&nbsp
+							   <a href="#"><i class="fa-solid fa-question"></i> Trợ giúp</a>
+							</div>
+						  </div>
+						  	<div class="row mb-3">
+								<div class="col-lg-12 text-center">
+									<button type="button" class="btn btn-secondary btn-gardient"><i class="fa-solid fa-user-plus"></i> Đăng ký</button>
+									<button type="button" class="btn btn-secondary btn-gardient"><i class="fa-solid fa-right-from-bracket"></i> Thoát</button>
+							</div>
+					  </div>
+						 <div class="row mb-3">
+							<div class="col-lg-11 text-end lg-3	">
+							 <a href="#"><i class="fa-solid fa-flag-usa"></i>English</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+							  <a href="#"><i class="fa-solid fa-flag"></i>Chinese</a>
+							   
+							</div>
+						  </div>	
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="js/ckeditor.js"></script>
+
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#UDetail' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
+</body>
+</html>
